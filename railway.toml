@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "pip install -r requirements.txt && npm install && npm install --no-save @rolldown/binding-linux-x64-gnu@1.1.5 && npm run build && python manage.py collectstatic --noinput && python manage.py migrate"
+buildCommand = "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate"
 
 [deploy]
 startCommand = "gunicorn --chdir backend resumebuilder.wsgi:application"

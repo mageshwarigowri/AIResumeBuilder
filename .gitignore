@@ -4,5 +4,4 @@ __pycache__/
 *.py[cod]
 db.sqlite3
 node_modules/
-backend/frontend_dist/
 backend/staticfiles/
